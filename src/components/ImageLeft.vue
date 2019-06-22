@@ -1,7 +1,7 @@
 <template>
   <div class="image-left">
     <div class="left">
-      <img class="js-tilt" :src="img" />
+      <img class="js-tilt" :src="img">
     </div>
     <div class="right">
       <h2>{{ title }}</h2>
@@ -10,37 +10,36 @@
 </template>
 
 <script>
-import $ from 'jquery'
-require('tilt.js')
+import $ from "jquery";
+import "tilt.js";
 
 export default {
-  name: 'ImageLeft',
-  props: ['img', 'title'],
+  name: "ImageLeft",
+  props: ["img", "title"],
   methods: {
     isInViewport() {
-      if ($(this.$el).isInViewport())
-        this.$el.classList.add('fade-in')
-        
-      requestAnimationFrame(this.isInViewport)
+      if ($(this.$el).isInViewport()) this.$el.classList.add("fade-in");
+
+      requestAnimationFrame(this.isInViewport);
     }
   },
   mounted() {
-    $.fn.isInViewport = function () {
-      let elementTop = $(this).offset().top
-      let elementBottom = elementTop + $(this).outerHeight()
-      let viewportTop = $(window).scrollTop()
-      let viewportBottom = viewportTop + $(window).height()
+    $.fn.isInViewport = function() {
+      let elementTop = $(this).offset().top;
+      let elementBottom = elementTop + $(this).outerHeight();
+      let viewportTop = $(window).scrollTop();
+      let viewportBottom = viewportTop + $(window).height();
 
-      return elementBottom > viewportTop && elementTop < viewportBottom
-    }
+      return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
 
-    $('.js-tilt').tilt({
-      perspective:  1500
-    })
+    $(".js-tilt").tilt({
+      perspective: 1500
+    });
 
-    requestAnimationFrame(this.isInViewport)
+    requestAnimationFrame(this.isInViewport);
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -62,7 +61,7 @@ export default {
     @media screen and (max-width: 425px) {
       width: 100%;
     }
-    
+
     @media screen and (min-width: 769px) {
       padding-left: 100px;
     }

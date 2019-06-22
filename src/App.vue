@@ -1,27 +1,31 @@
 <template>
   <div id="app">
-    <Header />
-    <ImageLeft img="/img/obermer.png" title="Barack Obama" />
-    <ImageRight img="/img/yonce.png" title="Beyoncé Knowles-Carter" />
-    <Footer />
+    <Header/>
+    <ImageLeft img="/img/obermer.png" title="Barack Obama"/>
+    <ImageRight img="/img/yonce.png" title="Beyoncé Knowles-Carter"/>
+    <ImageLeft img="/img/potato-jesus.png" title="Potato Jesus"/>
+    <ImageRight img="/img/the-creation-of-adam.png" title="The Creation of Adam"/>
+    <ImageLeft img="/img/the-scream.png" title="The Scream"/>
+    <ImageRight img="/img/mona-lisa.png" title="Mona Lisa"/>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import ImageLeft from './components/ImageLeft.vue'
-import ImageRight from './components/ImageRight.vue'
-import Footer from './components/Footer.vue'
+import Header from "./components/Header.vue";
+import ImageLeft from "./components/ImageLeft.vue";
+import ImageRight from "./components/ImageRight.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     Header,
     ImageLeft,
     ImageRight,
     Footer
   }
-}
+};
 </script>
 
 <style>
@@ -42,7 +46,7 @@ body {
 }
 
 #app {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
@@ -100,7 +104,7 @@ body {
 a {
   color: #a5a5a5;
   text-decoration: none;
-  transition: color .25s ease-in-out;
+  transition: color 0.25s ease-in-out;
 }
 
 a:hover {
