@@ -1,0 +1,47 @@
+.image-left {
+  padding: 100px 0;
+  display: flex;
+}
+
+@media screen and (max-width: 425px) {
+  .image-left {
+    flex-direction: column;
+  }
+}
+
+.image-left.fade-in {
+  animation: fade-in-left 1s ease-in;
+}
+
+.image-left .left {
+  width: 50%;
+}
+
+@media screen and (max-width: 425px) {
+  .image-left .left {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .image-left .left {
+    padding-left: 100px;
+  }
+}
+
+.image-left .left img {
+  width: 100%;
+  height: auto;
+}
+
+.image-left .right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.image-left .right h2 {
+  font-size: 2em;
+}
