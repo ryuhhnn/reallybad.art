@@ -5,7 +5,11 @@ const Header = () => {
         Hello,
         <br />
         my name is{" "}
-        <a href="https://www.ryuhhnn.com" target="_blank" rel="noopener">
+        <a
+          href="https://www.ryuhhnn.com"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           @ryuhhnn
         </a>
         <br />
