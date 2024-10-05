@@ -7,7 +7,7 @@ const ImageRight = ({ src, title }) => {
         <h2>{title}</h2>
       </div>
       <div className="right">
-        <Image src={src} />
+        <Image src={src} alt="" />
       </div>
     </div>
   );

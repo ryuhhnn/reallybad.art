@@ -15,7 +15,7 @@ const Home = () => {
       <Header />
 
       <div className="content fade-in">
-        <ImageLeft src={obermer} title="Barack Obama" />
+        <ImageLeft src={obermer} title="Barack Obama" priority={true} />
         <ImageRight src={yonce} title="Beyoncé Knowles-Carter" />
         <ImageLeft src={potatoJesus} title="Potato Jesus" />
         <ImageRight src={creationOfAdam} title="The Creation of Adam" />
