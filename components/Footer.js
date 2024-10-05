@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer fade-in">
       <p>
         made with &#9829; by{" "}
         <a

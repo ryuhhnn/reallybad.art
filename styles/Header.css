@@ -21,7 +21,7 @@
 .header h1 {
   font-size: 2.5em;
   line-height: 0.95em;
-  animation: fade-in 0.75s ease-in;
+  animation: fade-in-up 0.75s ease-in;
 }
 
 @media screen and (min-width: 1025px) {
